@@ -317,21 +317,7 @@ span{
     box-shadow: 0 0 1rem;
 }
 
-/* Reglas para pantallas pequeñas */
-@media only screen and (max-width: 600px) {
-    .about {
-      flex-direction: column;
-    }
-    .about-img img {
-      width: 100%;
-    }
-    .about-content {
-      text-align: center;
-    }
-    .about-content h2 {
-      text-align: center;
-    }
-  }
+
   
   /* Reglas para pantallas medianas */
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
