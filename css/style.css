@@ -362,7 +362,12 @@ span{
       font-size: 3rem;
     }
     .home-img img {
-      width: 80%;
+        position: relative;
+        top: -175px;
+        left: -20px;
+        width: 160%;
+
+      
     }
     .home-content h3 {
       font-size: 2rem;
@@ -371,7 +376,7 @@ span{
       font-size: 4rem;
     }
     .home-content p {
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin: 1rem 0 2rem;
     }
     .social-media a {
@@ -388,26 +393,33 @@ span{
       width: 100%;
     }
     .about-content h2 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .about-content h3 {
       font-size: 2rem;
       margin-bottom: 0.5rem;
     }
     .about-content p {
-      font-size: 1.5rem;
+      font-size: .9rem;
       margin: 1rem 0 2rem;
     }
+    .services {
+        padding-top: 60px;
+    }
     .services-container {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
     .services h2 {
-      margin-bottom: 3rem;
+      margin-bottom: .2rem;
+    }
+    .heading {
+      font-size: 2rem;
     }
     .services-box {
       width: 100%;
-      padding: 2rem 1rem;
-      margin-bottom: 2rem;
+      padding: .5rem 1rem;
+      margin-bottom: -1rem;
     }
     .services-box h3 {
       font-size: 2rem;
@@ -438,15 +450,39 @@ span{
       transform: none;
     }
     .portfolio-layer h3 {
-      font-size: 2rem;
+        color: var(--main-color);
+      font-size: 1rem;
     }
     .portfolio-layer p {
-      font-size: 1.5rem;
+        visibility: hidden;
+      font-size: .5rem;
       margin: 0.3rem 0 1rem;
     }
     .portfolio-layer a {
+        visibility: visible;
+        position: relative;
+        top: -30px;
       font-size: 1.5rem;
-      padding: 1rem 2rem;
+      padding: .3rem 2rem;
+    }
+
+    .portfolio-box .portfolio-layer {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, .1), var(--bg-color));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 4rem;
+        transform: translateY(0);
+    }
+    .portfolio-layer:hover{
+        transition: none;
     }
   }
   @media only screen and (max-width: 600px) {
